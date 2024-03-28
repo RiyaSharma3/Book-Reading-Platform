@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Home page css*/
+.navbar{
+    height: 60px;
+    background-color: #274472;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid white;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar img{
+    height: 36px;
+    margin-left: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#logo{
+    color: #C3E0E5;
+    font-size: 36px;
+    font-family: fantasy;
+    margin-left: 10px;
+    margin-right: 50%;
+}
+
+.home{
+    margin-right: 53px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+body {
+    padding-top: 65.5px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        background-color: #274472;
+        
+        z-index: 1000;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    .menu a {
+        padding: 10px;
+    }
+}
+
+
+
+
+/*Background Styles*/
+.bg-text-box{
+    position:relative;
+    height: 676px;
+   
+    background-image: url(./images/background_image.png); 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#bg-text1{
+     position: absolute;
+    display: flex;
+    top: 43.05%;
+    right: 40px;
+    color: #182944;
+    font-size: 40px;
+    font-style: italic; 
+}
+
+.search-container {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    position: absolute;
+    top: 59%; 
+    left: 85%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    background-color: white; 
+    padding: 5px 10px; 
+    border-radius: 27px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 340px;
+}
+
+@media screen and (max-width:1100px) {
+    #bg-text1{
+       visibility: hidden;
+   }
+   .search-container {
+    visibility: hidden;
+}
+
+}
+.search-container input[type="text"] {
+    width: calc(100% - 30px);
+    height: 18px; 
+    font-size: 18px;
+    padding: 5px 10px;
+    border: none;
+    outline: none; 
+    color: #182944;
+}
+
+.search-container button {
+    background:#4f81b0;
+    border: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    position:absolute;
+    border-radius: 50%;
+    font-size: 17px;
+    right: 0;
+    margin: 1.4px;
+}
+
+
+
+/*about section css*/
+.section-about{
+    position:relative;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about{
+    text-align: center;
+    width: 100%;
+}
+
+.about h2{
+    font-size: 30px;
+    color: #182944;
+    font-family: Georgia;
+}
+
+.about p{
+    color: #182944;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.items{
+    margin: 10px;
+    padding: 20px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.items p{
+    height: 100px;
+    width: 250px;
+    margin-left: 35px;
+    text-align: justify;
+}
+
+.columns h5{
+    font-size: 18px;
+    color: palevioletred;
+    padding-left: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .items {
+        width: 90%;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .h1st{
+        text-align: center;
+    }
+}
+
+
+/*books section css 640*/
+.section-books{
+    position:relative;
+    background-color: #C3E0E5;
+    display: flex;
+    justify-content: center;
+    padding-bottom:60px;
+}
+
+.books {
+    text-align: center;
+    width: 100%;
+}
+
+.it a{
+    color: #4f81b0;
+    font-size: 24px;  
+    font-family: math;
+    text-decoration: none;
+}
+
+h2{
+    font-size: 48px;
+    color: #182944;
+    font-family: Georgia;
+    margin-top: 40px;
+}
+
+.box-container1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 52px;
+     flex-wrap: wrap; 
+}
+
+.box {
+    width: 292px;
+    height: 400px;
+    background-color: #FFFFFF; 
+    border: 2.5px solid white; 
+    border-radius: 10px;
+    margin: 10px;   
+}
+
+.it{
+    display: flex;
+    flex-direction: column;
+} 
+
+.box-container2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 52px;
+    flex-wrap: wrap; 
+    padding-top: 27px;
+}
+
+
+
+/* Contact Us section CSS */
+.section-contactUs {
+    position: relative;
+    height: 390px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.contactUs {
+    position: relative;
+    z-index: 1;
+    text-align:right;
+    padding-right: 198px;
+    font-size: 10px;
+    color: white;
+}
+
+.contactUs h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.contactUs input {
+    width: 300px;
+    height: 30px;
+    font-size: 14px;
+    margin-right: 15px;
+    color: black;
+    text-align:left ;
+    margin-bottom: 12px;
+}
+
+.contactUs input[placeholder="Message"] {
+    height: 70px;
+}
+
+#submit{
+    padding: 10px 20px;
+    background-color: #4f81b0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;
+}
+
+.contactUs a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px 10px;
+    padding-top: 6px;
+    font-family: math;
+    border: 2px solid #4f81b0;
+    border-radius: 6px;
+    background-color: #4f81b0;
+    margin-right: 15px;
+}
+
+
+
+/*footer*/
+.footer {
+    padding: 11px 0;
+    background-color: black;
+}
+
+.footer p{
+    color: #C3E0E5;
+    text-align: center;
+}

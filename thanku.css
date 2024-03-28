@@ -1,0 +1,17 @@
+
+#box1{
+    width: 436px;
+    height: 332.5px;
+    background-color: #FFFFFF; 
+    border: 2.5px solid plum; 
+    border-radius: 20px;
+    background-image: url(./images/thanku.png);
+    background-size: cover;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
